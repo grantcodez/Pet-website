@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <!-- logos w/ search bar -->
+      <div class="row">
+        <!-- logos -->
+        <div class="col-8">
+          <image src="balloonanimal.png" id="ballon" alt="company logo">
+          </image>
+          <a href="index.html">
+            <image src="ParadigmPic.png" id="para" alt="company logo"> </image>
+          </a>
+        </div>
+
+        <!-- searchbar -->
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <div class="text-right">
+            <button type="button" class="btn mr-1" id="searchBtn">
+              Search
+            </button>
+            <input type="text" class="" />
+          </div>
+        </div>
+      </div>
+      <!-- navigation  -->
+      <div class="row">
+        <div class="col">
+          <nav class="nav d-flex justify-content-center">
+            <button type="button" class="btn" id="home-btn">
+              <a href="index.html">Home</a>
+            </button>
+            <div class="btn-group">
+              <button
+                id="pet-btn"
+                type="button"
+                class="btn dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pets
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="cats.html">
+                  <button class="dropdown-item" type="button">
+                    <span>Cats</span>
+                  </button>
+                </a>
+                <a href="dogs.html">
+                  <button class="dropdown-item" type="button">
+                    <span>Dogs</span>
+                  </button>
+                </a>
+                <a href="birds.html">
+                  <button class="dropdown-item" type="button">
+                    <span>Birds</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <a href="form.html">
+              <button type="button" class="btn" id="form-btn">
+                <span>Consultations</span>
+              </button>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- main paragraph content -->
+      <h2 class="text-center">Request Consultation</h2>
+      <div class="row">
+        <div class="col-6">
+          <!-- consultation form -->
+          <form class="mx-5 mb-2">
+            <div class="form-group">
+              <label for="exampleInputName">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPhone">Phone</label>
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="Enter Phone Number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputTimeZone">Time Zone</label>
+              <input
+                type="time"
+                class="form-control"
+                placeholder="Enter Time Zone"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPetName">Pet Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPetName"
+                placeholder="Enter Pet Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPetType">Pet Type</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPetType"
+                placeholder="Enter Pet Type"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPetAge">Pet Age</label>
+              <input
+                type="number"
+                class="form-control"
+                id="exampleInputPetName"
+                placeholder="Enter Pet Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Comments</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!-- images on side of form -->
+        <div class="col-6">
+          <image class="mt-5" src="buspic1.jpg" alt="bussiness meeting"></image>
+          <image class="mt-5" src="buspic2.jpg" alt="bussiness meeting"></image>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="contanier text-center">
+        Contact US: Phone:1-800-275-2343 Email:example@gmail.com
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
